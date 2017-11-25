@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { Intent, Spinner, DatePickerFactory } from "@blueprintjs/core";
 import './App.css';
 
 import Navbar from "./Navbar";
+import { Board, TicketOverlay } from "./board";
 
 // import Data from './data.json';
 
@@ -33,7 +35,13 @@ class App extends Component {
           </div>
 
           {/* task lists */}
-
+          <Board
+            // data={data}
+            draggable
+          // handleDragStart={handleDragStart}
+          // handleDragEnd={handleDragEnd}
+          // onCardClick={this.handleTicketOverlayOpen}
+          />
 
         </div>
       </div >
