@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import Navbar from "./Navbar";
+
 // import Data from './data.json';
 
 class App extends Component {
@@ -12,39 +14,27 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <nav className="pt-navbar pt-dark">
-          <div className="pt-navbar-group center-title">
-            <div className="pt-navbar-heading">Task Manager</div>
+        <Navbar />
+        {/* add task */}
+        <div className="pt-form-group" style={{ display: 'inline' }}>
+          <div className="pt-input-group" style={{ width: '30%', float: 'left' }}>
+            <span className="pt-icon pt-icon-list"></span>
+            <input
+              type="text"
+              className="pt-input"
+              placeholder="Enter your task..."
+            // onChange={}
+            // onKeyPress={}
+            />
+            <button
+              className="pt-button pt-minimal pt-intent-primary pt-icon-plus"
+              onClick={this.handleUserInputClick}
+            />
           </div>
-        </nav>
-        <div className="pt-form-content" style={styles.todoForm}>
-          <input id="example-form-group-input-a" className="pt-input" placeholder="Add Project" type="text" dir="auto" />
-          <div className="pt-form-helper-text"></div>
-        </div>
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-4" style={styles.columns}>
-              <h5 className="mb-1">Todo</h5>
-            </div>
-            <div className="col-md-4" style={styles.columns}>
-              <h5 className="mb-1">In Progress</h5>
-              <ul style={styles.ul}>
-                <li><a>Home</a></li>
-                <li><a>News</a></li>
-                <li><a>Contact</a></li>
-                <li><a>About</a></li>
-              </ul>
-            </div>
-            <div className="col-md-4" style={styles.columns}>
-              <h5 className="">Done</h5>
-              <ul style={styles.ul}>
-                <li><a>Home</a></li>
-                <li><a>News</a></li>
-                <li><a>Contact</a></li>
-                <li><a>About</a></li>
-              </ul>
-            </div>
-          </div>
+
+          {/* task lists */}
+
+
         </div>
       </div >
     );

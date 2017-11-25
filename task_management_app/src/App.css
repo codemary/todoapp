@@ -43,3 +43,8 @@
   width: 100px;
   height: 100px;
 }
+
+
+.task-input {
+  text-align: left;
+}
