@@ -1,0 +1,25 @@
+{
+  "name": "task_management_app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@blueprintjs/core": "^1.33.0",
+    "@blueprintjs/labs": "^0.13.0",
+    "lodash.flow": "^3.5.0",
+    "react": "^16.1.1",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-columns": "^1.1.0",
+    "react-dom": "^16.1.1",
+    "react-drag-sortable": "^1.0.5",
+    "react-hover-observer": "^2.0.2",
+    "react-scripts": "1.0.17",
+    "react-trello": "^1.24.1",
+    "uid": "^0.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
